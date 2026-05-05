@@ -1,0 +1,1089 @@
+/**
+ * Inner marketing templates (features, industries, contact, demo) — complements legacy.css.
+ */
+
+.mountsol-simple-hero {
+	position: relative;
+	padding: 5rem 0 6rem;
+	background: linear-gradient(135deg, #0a1628, #152238);
+	overflow: hidden;
+	margin-top: calc(-1 * var(--header-offset));
+}
+
+.mountsol-simple-hero::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background-image: linear-gradient(to right, rgb(255 255 255 / 0.02) 1px, transparent 1px),
+		linear-gradient(to bottom, rgb(255 255 255 / 0.02) 1px, transparent 1px);
+	background-size: 32px 32px;
+	pointer-events: none;
+}
+
+.mountsol-simple-hero__inner {
+	position: relative;
+	max-width: var(--container);
+	margin-inline: auto;
+	padding-inline: 1rem;
+	padding-top: var(--header-offset);
+	text-align: center;
+}
+
+.mountsol-simple-hero__eyebrow {
+	margin: 0 0 1.25rem;
+	font-size: 0.875rem;
+	font-weight: 600;
+	color: var(--accent);
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+}
+
+.mountsol-simple-hero__title {
+	margin: 0 0 2rem;
+	font-size: clamp(1.875rem, 4vw, 3.75rem);
+	font-weight: 700;
+	color: #fff;
+	line-height: 1.15;
+	max-width: 50rem;
+	margin-inline: auto;
+}
+
+.mountsol-simple-hero__desc {
+	margin: 0 auto;
+	font-size: clamp(1rem, 2vw, 1.25rem);
+	color: rgb(255 255 255 / 0.75);
+	max-width: 36rem;
+	line-height: 1.6;
+}
+
+.mountsol-inner {
+	padding: 4rem 0;
+}
+
+.mountsol-inner--alt {
+	background: var(--secondary);
+	border-color: var(--border);
+	border-style: solid;
+	border-width: 1px 0;
+}
+
+.mountsol-inner__title {
+	margin: 0 0 3rem;
+	font-size: clamp(1.75rem, 3vw, 2.25rem);
+	font-weight: 700;
+	text-align: center;
+}
+
+.mountsol-inner__lede {
+	margin: -2rem auto 3rem;
+	font-size: 1.125rem;
+	color: var(--muted-foreground);
+	text-align: center;
+	max-width: 40rem;
+}
+
+.mountsol-grid-cards {
+	display: grid;
+	gap: 1.5rem;
+	grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+	.mountsol-grid-cards--2 {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+	.mountsol-grid-cards--feat {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (min-width: 1024px) {
+	.mountsol-grid-cards--feat {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+	.mountsol-grid-cards--3 {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
+
+.mountsol-tile {
+	display: block;
+	padding: 1.5rem;
+	background: #fff;
+	border: 1px solid rgb(226 232 240 / 0.5);
+	border-radius: var(--radius);
+	box-shadow: 0 1px 2px rgb(0 0 0 / 0.04);
+	text-decoration: none;
+	color: inherit;
+	transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+	height: 100%;
+}
+
+.mountsol-tile:hover {
+	box-shadow: 0 20px 40px -15px rgb(0 0 0 / 0.12);
+	transform: translateY(-3px);
+	border-color: rgb(232 92 46 / 0.35);
+}
+
+.mountsol-tile__title {
+	margin: 0 0 0.5rem;
+	font-size: 1.05rem;
+	font-weight: 600;
+}
+
+.mountsol-tile__desc {
+	margin: 0;
+	font-size: 0.9rem;
+	color: var(--muted-foreground);
+	line-height: 1.5;
+}
+
+.mountsol-prose-card {
+	padding: 1.5rem;
+	background: #fff;
+	border: 1px solid rgb(226 232 240 / 0.5);
+	border-radius: var(--radius);
+	box-shadow: 0 1px 2px rgb(0 0 0 / 0.04);
+	transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.mountsol-prose-card:hover {
+	box-shadow: 0 20px 40px -15px rgb(0 0 0 / 0.12);
+	transform: translateY(-3px);
+}
+
+.mountsol-prose-card__title {
+	margin: 0 0 0.5rem;
+	font-size: 1.05rem;
+	font-weight: 600;
+}
+
+.mountsol-prose-card__text {
+	margin: 0;
+	font-size: 0.95rem;
+	color: var(--muted-foreground);
+	line-height: 1.55;
+}
+
+.mountsol-prose-card--wide {
+	padding: 2rem;
+}
+
+.mountsol-prose-card--wide .mountsol-prose-card__title {
+	font-size: 1.2rem;
+}
+
+.mountsol-cta-band {
+	position: relative;
+	padding: 5rem 0;
+	overflow: hidden;
+	text-align: center;
+	color: #fff;
+}
+
+.mountsol-cta-band__bg {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(135deg, #0a1628, #0a1628, #152238);
+}
+
+.mountsol-cta-band__glow1,
+.mountsol-cta-band__glow2 {
+	position: absolute;
+	border-radius: 50%;
+	filter: blur(80px);
+	pointer-events: none;
+}
+
+.mountsol-cta-band__glow1 {
+	width: 500px;
+	height: 500px;
+	top: 0;
+	left: 0;
+	background: rgb(232 92 46 / 0.12);
+	transform: translate(-45%, -45%);
+}
+
+.mountsol-cta-band__glow2 {
+	width: 400px;
+	height: 400px;
+	bottom: 0;
+	right: 0;
+	background: rgb(255 255 255 / 0.06);
+	transform: translate(45%, 45%);
+}
+
+.mountsol-cta-band__grid {
+	position: absolute;
+	inset: 0;
+	background-image: linear-gradient(to right, rgb(255 255 255 / 0.06) 1px, transparent 1px),
+		linear-gradient(to bottom, rgb(255 255 255 / 0.06) 1px, transparent 1px);
+	background-size: 32px 32px;
+}
+
+.mountsol-cta-band__inner {
+	position: relative;
+	max-width: var(--container);
+	margin-inline: auto;
+	padding-inline: 1rem;
+}
+
+.mountsol-cta-band__title {
+	margin: 0 0 1rem;
+	font-size: clamp(1.75rem, 3vw, 2.75rem);
+	font-weight: 700;
+	max-width: 36rem;
+	margin-inline: auto;
+	line-height: 1.2;
+}
+
+.mountsol-cta-band__desc {
+	margin: 0 auto 2.5rem;
+	font-size: 1.05rem;
+	color: rgb(255 255 255 / 0.7);
+	max-width: 32rem;
+	line-height: 1.5;
+}
+
+.mountsol-cta-band__actions {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (min-width: 640px) {
+	.mountsol-cta-band__actions {
+		flex-direction: row;
+	}
+}
+
+.mountsol-cta-band__btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.85rem 2rem;
+	font-size: 1.05rem;
+	font-weight: 600;
+	border-radius: var(--radius);
+	text-decoration: none;
+	transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.mountsol-cta-band__btn--primary {
+	background: var(--accent);
+	color: #fff;
+	box-shadow: 0 10px 30px -10px rgb(232 92 46 / 0.5);
+}
+
+.mountsol-cta-band__btn--primary:hover {
+	background: #d14f24;
+	color: #fff;
+	transform: translateY(-1px);
+}
+
+.mountsol-cta-band__btn--ghost {
+	border: 2px solid rgb(255 255 255 / 0.35);
+	color: #fff;
+}
+
+.mountsol-cta-band__btn--ghost:hover {
+	background: rgb(255 255 255 / 0.08);
+	color: #fff;
+}
+
+.mountsol-cta-band__fineprint {
+	margin: 2rem 0 0;
+	font-size: 0.8rem;
+	color: rgb(255 255 255 / 0.45);
+}
+
+/* Feature / industry hero */
+.mountsol-feature-hero {
+	margin-top: calc(-1 * var(--header-offset));
+	padding: 6rem 0 8rem;
+	background: linear-gradient(135deg, #0a1628, #152238);
+	color: #fff;
+}
+
+.mountsol-feature-hero__inner {
+	max-width: var(--container);
+	margin-inline: auto;
+	padding-inline: 1rem;
+	padding-top: calc(var(--header-offset) + 1rem);
+}
+
+.mountsol-feature-hero__layout {
+	display: grid;
+	gap: 2rem;
+	align-items: center;
+}
+
+@media (min-width: 768px) {
+	.mountsol-feature-hero__layout {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+.mountsol-feature-hero__eyebrow {
+	margin: 0 0 1rem;
+	font-size: 0.8rem;
+	font-weight: 600;
+	color: var(--accent);
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+}
+
+.mountsol-feature-hero__title {
+	margin: 0 0 2rem;
+	font-size: clamp(2rem, 4vw, 3.5rem);
+	font-weight: 700;
+	line-height: 1.1;
+}
+
+.mountsol-feature-hero__desc {
+	margin: 0 0 2rem;
+	font-size: 1.1rem;
+	color: rgb(255 255 255 / 0.75);
+	line-height: 1.55;
+	max-width: 40rem;
+}
+
+.mountsol-feature-hero__link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
+	font-size: 1.05rem;
+	font-weight: 600;
+	color: var(--accent);
+	text-decoration: none;
+}
+
+.mountsol-feature-hero__link:hover {
+	color: #ff9a7a;
+}
+
+/* Centered industry hero */
+.mountsol-industry-hero {
+	margin-top: calc(-1 * var(--header-offset));
+	padding: 7rem 0 8rem;
+	background: linear-gradient(135deg, #0a1628, #152238);
+	color: #fff;
+	text-align: center;
+}
+
+.mountsol-industry-hero__inner {
+	max-width: var(--container);
+	margin-inline: auto;
+	padding-inline: 1rem;
+	padding-top: calc(var(--header-offset) + 1rem);
+}
+
+.mountsol-industry-hero__mark {
+	width: 4rem;
+	height: 4rem;
+	margin: 0 auto 1.5rem;
+	border-radius: 0.75rem;
+	background: rgb(255 255 255 / 0.1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+	color: var(--accent);
+	font-weight: 700;
+}
+
+.mountsol-industry-hero__eyebrow {
+	margin: 0 0 1rem;
+	font-size: 0.8rem;
+	font-weight: 600;
+	color: var(--accent);
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+}
+
+.mountsol-industry-hero__title {
+	margin: 0 0 2rem;
+	font-size: clamp(2rem, 4vw, 3.5rem);
+	font-weight: 700;
+	line-height: 1.1;
+	max-width: 45rem;
+	margin-inline: auto;
+}
+
+.mountsol-industry-hero__desc {
+	margin: 0 auto 2rem;
+	font-size: 1.1rem;
+	color: rgb(255 255 255 / 0.75);
+	line-height: 1.55;
+	max-width: 38rem;
+}
+
+.mountsol-feature-link-grid {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+	.mountsol-feature-link-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (min-width: 1024px) {
+	.mountsol-feature-link-grid {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+}
+
+.mountsol-feature-link-grid a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.mountsol-contact-grid {
+	display: grid;
+	gap: 2rem;
+	margin-bottom: 3rem;
+	grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+	.mountsol-contact-grid {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
+
+.mountsol-contact-card {
+	padding: 2rem;
+	text-align: center;
+	background: #fff;
+	border: 1px solid rgb(226 232 240 / 0.5);
+	border-radius: var(--radius);
+	box-shadow: 0 1px 3px rgb(0 0 0 / 0.06);
+	transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.mountsol-contact-card:hover {
+	box-shadow: 0 16px 40px -12px rgb(0 0 0 / 0.12);
+	transform: translateY(-2px);
+}
+
+.mountsol-contact-card__icon {
+	width: 3.5rem;
+	height: 3.5rem;
+	margin: 0 auto 1rem;
+	border-radius: var(--radius);
+	background: var(--secondary);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.25rem;
+}
+
+.mountsol-contact-card h3 {
+	margin: 0 0 0.5rem;
+	font-size: 1.15rem;
+}
+
+.mountsol-contact-card p {
+	margin: 0 0 1rem;
+	font-size: 0.9rem;
+	color: var(--muted-foreground);
+}
+
+.mountsol-contact-card a {
+	color: var(--foreground);
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.mountsol-contact-card a:hover {
+	color: var(--accent);
+}
+
+.mountsol-details {
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	padding: 1rem 1.25rem;
+	background: #fff;
+	cursor: pointer;
+}
+
+.mountsol-details summary {
+	font-weight: 600;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.mountsol-details summary::-webkit-details-marker {
+	display: none;
+}
+
+.mountsol-details p {
+	margin: 1rem 0 0;
+	color: var(--muted-foreground);
+	font-size: 0.95rem;
+	line-height: 1.55;
+}
+
+.mountsol-login-wrap {
+	min-height: 60vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 4rem 1rem;
+	margin-top: calc(-1 * var(--header-offset));
+	padding-top: calc(var(--header-offset) + 4rem);
+	background: linear-gradient(135deg, #0a1628, #152238);
+}
+
+.mountsol-login-card {
+	width: 100%;
+	max-width: 28rem;
+	padding: 2rem;
+	background: #fff;
+	border-radius: var(--radius);
+	box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+.mountsol-login-card h1 {
+	margin: 0 0 0.35rem;
+	font-size: 1.75rem;
+}
+
+.mountsol-login-card .mountsol-muted {
+	margin: 0 0 1.5rem;
+	font-size: 0.95rem;
+}
+
+.mountsol-login-card label {
+	display: block;
+	font-size: 0.875rem;
+	font-weight: 500;
+	margin-bottom: 0.35rem;
+}
+
+.mountsol-login-card input[type='email'],
+.mountsol-login-card input[type='password'] {
+	width: 100%;
+	padding: 0.55rem 0.75rem;
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	margin-bottom: 1rem;
+	font: inherit;
+}
+
+.mountsol-login-card .btn {
+	width: 100%;
+	margin-top: 0.5rem;
+}
+
+.mountsol-demo-steps .mountsol-step-num {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 999px;
+	background: var(--foreground);
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	margin: 0 auto 1rem;
+}
+
+.mountsol-demo-steps h3 {
+	margin: 0 0 0.35rem;
+	font-size: 1.05rem;
+}
+
+.mountsol-demo-steps p {
+	margin: 0;
+	font-size: 0.875rem;
+	color: var(--muted-foreground);
+}
+
+.two-col-help {
+	display: grid;
+	gap: 2rem;
+}
+
+@media (min-width: 768px) {
+	.two-col-help {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+/* Narrow content column (about, resources mid) */
+.mountsol-narrow {
+	max-width: 48rem;
+	margin-inline: auto;
+}
+
+.mountsol-about-stack {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.mountsol-prose-card__title--lg {
+	font-size: clamp(1.5rem, 3vw, 1.875rem);
+	margin-bottom: 1rem;
+}
+
+.mountsol-prose-card__text--lg {
+	font-size: 1.125rem;
+	line-height: 1.65;
+}
+
+.mountsol-values-grid {
+	margin-top: 0.5rem;
+	text-align: left;
+}
+
+.mountsol-value-title {
+	margin: 0 0 0.5rem;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.mountsol-value-desc {
+	margin: 0;
+	font-size: 0.875rem;
+	color: var(--muted-foreground);
+	line-height: 1.55;
+}
+
+.mountsol-about-team .mountsol-inner__title {
+	margin-bottom: 3rem;
+}
+
+.mountsol-about-team__body {
+	margin: 0;
+	font-size: 1.125rem;
+	color: var(--muted-foreground);
+	line-height: 1.65;
+	text-align: center;
+}
+
+.mountsol-resources-stack {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+}
+
+.mountsol-resources-block__title {
+	margin: 0 0 2rem;
+	font-size: clamp(1.5rem, 3vw, 1.875rem);
+	font-weight: 700;
+}
+
+.mountsol-resource-card {
+	padding: 1.5rem;
+	background: #fff;
+	border: 1px solid rgb(226 232 240 / 0.5);
+	border-radius: var(--radius);
+	box-shadow: 0 1px 2px rgb(0 0 0 / 0.04);
+	transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+	height: 100%;
+}
+
+.mountsol-resource-card:hover {
+	box-shadow: 0 20px 40px -15px rgb(0 0 0 / 0.12);
+	transform: translateY(-3px);
+	border-color: rgb(232 92 46 / 0.35);
+}
+
+.mountsol-resource-card__title {
+	margin: 0 0 0.5rem;
+	font-size: 1.05rem;
+	font-weight: 600;
+	transition: color 0.2s;
+}
+
+.mountsol-resource-card:hover .mountsol-resource-card__title {
+	color: var(--accent);
+}
+
+.mountsol-resource-card__desc {
+	margin: 0 0 1rem;
+	font-size: 0.875rem;
+	color: var(--muted-foreground);
+	line-height: 1.55;
+}
+
+.mountsol-resource-card__faux-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-size: 0.875rem;
+	font-weight: 600;
+	color: var(--accent);
+}
+
+.mountsol-resource-card__faux-link svg {
+	transition: transform 0.2s;
+}
+
+.mountsol-resource-card:hover .mountsol-resource-card__faux-link svg {
+	transform: translateX(4px);
+}
+
+.mountsol-resources-mid {
+	text-align: center;
+}
+
+.mountsol-resources-mid__title {
+	margin: 0 0 1rem;
+	font-size: clamp(1.5rem, 3vw, 1.875rem);
+	font-weight: 700;
+}
+
+.mountsol-resources-mid__lede {
+	margin: 0 0 2rem;
+	font-size: 1.125rem;
+	color: var(--muted-foreground);
+	line-height: 1.65;
+}
+
+.mountsol-inline-link-arrow {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-weight: 600;
+	color: var(--accent);
+	text-decoration: none;
+	transition: color 0.15s;
+}
+
+.mountsol-inline-link-arrow:hover {
+	color: #d14f24;
+}
+
+.mountsol-inline-link-arrow svg {
+	transition: transform 0.2s;
+}
+
+.mountsol-inline-link-arrow:hover svg {
+	transform: translateX(4px);
+}
+
+/* ——— Pricing ——— */
+.mountsol-pricing-grid {
+	display: grid;
+	gap: 1.5rem;
+	grid-template-columns: 1fr;
+	align-items: stretch;
+}
+
+@media (min-width: 1024px) {
+	.mountsol-pricing-grid {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
+
+.mountsol-pricing-card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+	border: 1px solid rgb(226 232 240 / 0.85);
+	border-radius: var(--radius);
+	box-shadow: 0 1px 3px rgb(0 0 0 / 0.06);
+	overflow: hidden;
+	transition: box-shadow 0.25s, transform 0.25s, border-color 0.25s;
+}
+
+.mountsol-pricing-card:hover {
+	box-shadow: 0 24px 50px -20px rgb(0 0 0 / 0.15);
+	transform: translateY(-2px);
+}
+
+.mountsol-pricing-card--featured {
+	background: linear-gradient(160deg, #0a1628 0%, #152238 65%);
+	border-color: rgb(232 92 46 / 0.45);
+	color: #fff;
+	box-shadow: 0 20px 50px -18px rgb(232 92 46 / 0.35);
+}
+
+.mountsol-pricing-badge {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
+	padding: 0.35rem 0.85rem;
+	font-size: 0.65rem;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	background: var(--secondary);
+	color: var(--foreground);
+	border-bottom-left-radius: var(--radius);
+}
+
+.mountsol-pricing-badge--accent {
+	background: var(--accent);
+	color: #fff;
+}
+
+.mountsol-p-icon {
+	flex-shrink: 0;
+}
+
+.mountsol-pricing-card__head {
+	padding: 1.75rem 1.5rem 1.25rem;
+	padding-top: 2.25rem;
+}
+
+.mountsol-pricing-card--featured .mountsol-pricing-card__head {
+	padding-top: 2.5rem;
+}
+
+.mountsol-pricing-card__name-row {
+	display: flex;
+	align-items: center;
+	gap: 0.65rem;
+	margin-bottom: 0.75rem;
+}
+
+.mountsol-pricing-card__icon {
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 0.65rem;
+	background: rgb(232 92 46 / 0.12);
+	color: var(--accent);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mountsol-pricing-card__icon--inv {
+	background: rgb(255 255 255 / 0.12);
+	color: var(--accent);
+}
+
+.mountsol-pricing-card--featured .mountsol-pricing-card__icon {
+	background: rgb(255 255 255 / 0.1);
+	color: #fff;
+}
+
+.mountsol-pricing-card__name {
+	margin: 0;
+	font-size: 1.15rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+}
+
+.mountsol-pricing-card--featured .mountsol-pricing-card__name {
+	color: #fff;
+}
+
+.mountsol-pricing-card__desc {
+	margin: 0 0 1.25rem;
+	font-size: 0.95rem;
+	color: var(--muted-foreground);
+	line-height: 1.5;
+}
+
+.mountsol-pricing-card--featured .mountsol-pricing-card__desc {
+	color: rgb(255 255 255 / 0.72);
+}
+
+.mountsol-pricing-card__price {
+	display: flex;
+	align-items: baseline;
+	gap: 0.15rem;
+	margin-bottom: 1.25rem;
+}
+
+.mountsol-pricing-card__amount {
+	font-size: 2.25rem;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+}
+
+.mountsol-pricing-card--featured .mountsol-pricing-card__amount {
+	color: #fff;
+}
+
+.mountsol-pricing-card__period {
+	font-size: 1rem;
+	color: var(--muted-foreground);
+}
+
+.mountsol-pricing-card--featured .mountsol-pricing-card__period {
+	color: rgb(255 255 255 / 0.55);
+}
+
+.mountsol-pricing-card__cta {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 0.75rem 1.25rem;
+	font-size: 1rem;
+	font-weight: 600;
+	border-radius: var(--radius);
+	text-decoration: none;
+	transition: background 0.15s, color 0.15s, transform 0.15s;
+}
+
+.mountsol-pricing-card__cta:not(.mountsol-pricing-card__cta--on-dark) {
+	box-sizing: border-box;
+}
+
+.mountsol-pricing-card__cta--on-dark {
+	background: var(--accent);
+	color: #fff;
+	box-shadow: 0 10px 28px -12px rgb(232 92 46 / 0.55);
+}
+
+.mountsol-pricing-card__cta--on-dark:hover {
+	background: #d14f24;
+	color: #fff;
+	transform: translateY(-1px);
+}
+
+.mountsol-pricing-card__body {
+	flex: 1;
+	padding: 0 1.5rem 1.75rem;
+	border-top: 1px solid rgb(226 232 240 / 0.6);
+	background: rgb(248 250 252 / 0.5);
+}
+
+.mountsol-pricing-card--featured .mountsol-pricing-card__body {
+	border-top-color: rgb(255 255 255 / 0.12);
+	background: rgb(0 0 0 / 0.15);
+}
+
+.mountsol-pricing-cat__title {
+	margin: 1.25rem 0 0.65rem;
+	font-size: 0.8rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: var(--foreground);
+}
+
+.mountsol-pricing-card--featured .mountsol-pricing-cat__title {
+	color: rgb(255 255 255 / 0.92);
+}
+
+.mountsol-pricing-cat:first-child .mountsol-pricing-cat__title {
+	margin-top: 0.35rem;
+}
+
+.mountsol-pricing-cat__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.mountsol-pricing-cat__list li {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.5rem;
+	font-size: 0.875rem;
+	color: var(--muted-foreground);
+	line-height: 1.45;
+}
+
+.mountsol-pricing-card--featured .mountsol-pricing-cat__list li {
+	color: rgb(255 255 255 / 0.78);
+}
+
+.mountsol-pricing-check {
+	flex-shrink: 0;
+	width: 1.25rem;
+	height: 1.25rem;
+	border-radius: 999px;
+	background: rgb(232 92 46 / 0.15);
+	color: var(--accent);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 0.1rem;
+}
+
+.mountsol-pricing-check--inv {
+	background: rgb(255 255 255 / 0.15);
+	color: #fff;
+}
+
+.mountsol-compare-inner {
+	max-width: 56rem;
+	margin-inline: auto;
+}
+
+.mountsol-compare-intro .mountsol-inner__title {
+	margin-bottom: 0.5rem;
+}
+
+.mountsol-compare-scroll {
+	overflow-x: auto;
+	margin-top: 2rem;
+	-webkit-overflow-scrolling: touch;
+}
+
+.mountsol-compare-table {
+	width: 100%;
+	min-width: 36rem;
+	border-collapse: collapse;
+	font-size: 0.9rem;
+}
+
+.mountsol-compare-table th,
+.mountsol-compare-table td {
+	padding: 0.85rem 1rem;
+	border: 1px solid var(--border);
+	text-align: left;
+	vertical-align: middle;
+}
+
+.mountsol-compare-table thead th {
+	background: var(--secondary);
+	font-weight: 700;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.mountsol-compare-table__highlight {
+	background: rgb(232 92 46 / 0.08);
+}
+
+.mountsol-compare-table tbody tr:nth-child(even) td {
+	background: rgb(248 250 252 / 0.6);
+}
+
+.mountsol-compare-table tbody tr:nth-child(even) td.mountsol-compare-table__highlight {
+	background: rgb(232 92 46 / 0.12);
+}
+
+.mountsol-compare-table__cell-center {
+	text-align: center;
+}
+
+.mountsol-compare-yes {
+	color: rgb(22 163 74);
+	font-weight: 700;
+	font-size: 1.1rem;
+}
+
+.mountsol-compare-no {
+	color: var(--muted-foreground);
+	font-size: 1rem;
+}
+
+.mountsol-details--pricing summary span {
+	font-size: 0.75rem;
+	opacity: 0.6;
+}

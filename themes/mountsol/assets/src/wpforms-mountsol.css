@@ -1,0 +1,153 @@
+/**
+ * WPForms / WPForms Lite — presentation scoped to match Mountsol.org form UX.
+ * Reference: Mountsol.org/components/demo-form.tsx, app/contact
+ */
+
+.wpforms-container,
+.wpforms-container .wpforms-form {
+	font-family: inherit;
+	color: var(--foreground, #0a1628);
+}
+
+.wpforms-container .wpforms-title {
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.wpforms-container .wpforms-field,
+.wpforms-container .wpforms-field.wpforms-field-textarea {
+	margin-bottom: 1.25rem;
+}
+
+.wpforms-container .wpforms-field-label,
+.wpforms-container .wpforms-field-label-inline {
+	font-size: 0.875rem;
+	font-weight: 500;
+	margin-bottom: 0.5rem;
+	display: block;
+}
+
+.wpforms-container .wpforms-required-label {
+	color: var(--accent, #e85c2e);
+}
+
+.wpforms-container input[type='text'],
+.wpforms-container input[type='email'],
+.wpforms-container input[type='tel'],
+.wpforms-container input[type='number'],
+.wpforms-container input[type='url'],
+.wpforms-container select,
+.wpforms-container textarea {
+	width: 100%;
+	max-width: 100%;
+	padding: 0.65rem 0.85rem;
+	border: 1px solid var(--border, #e2e8f0);
+	border-radius: var(--radius, 0.5rem);
+	background: var(--background, #fff);
+	font: inherit;
+	font-size: 1rem;
+	line-height: 1.4;
+	transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.wpforms-container input:focus,
+.wpforms-container select:focus,
+.wpforms-container textarea:focus {
+	outline: none;
+	border-color: var(--accent, #e85c2e);
+	box-shadow: 0 0 0 3px rgb(232 92 46 / 0.2);
+}
+
+.wpforms-container textarea {
+	min-height: 8rem;
+	resize: vertical;
+}
+
+.wpforms-container .wpforms-field-row.wpforms-field-medium,
+.wpforms-container .wpforms-field.wpforms-one-half {
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.wpforms-container .wpforms-field-row.wpforms-field-medium,
+	.wpforms-container .wpforms-field.wpforms-one-half {
+		width: calc(50% - 0.5rem);
+	}
+}
+
+.wpforms-container .wpforms-submit-container {
+	margin-top: 1rem;
+}
+
+.wpforms-container button[type='submit'],
+.wpforms-container .wpforms-submit,
+.wpforms-container input[type='submit'] {
+	width: 100%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.75rem 1.25rem;
+	font-size: 1rem;
+	font-weight: 600;
+	border: none;
+	border-radius: var(--radius, 0.5rem);
+	background: var(--accent, #e85c2e);
+	color: #fff;
+	cursor: pointer;
+	transition: background 0.2s, box-shadow 0.2s;
+}
+
+.wpforms-container button[type='submit']:hover,
+.wpforms-container .wpforms-submit:hover {
+	background: #d14f24;
+}
+
+.wpforms-container button[type='submit']:disabled {
+	opacity: 0.65;
+	cursor: not-allowed;
+}
+
+.wpforms-container .wpforms-error-container,
+.wpforms-container .wpforms-field.wpforms-has-error input,
+.wpforms-container .wpforms-field.wpforms-has-error select,
+.wpforms-container .wpforms-field.wpforms-has-error textarea {
+	border-color: #dc2626;
+}
+
+.wpforms-container label.wpforms-error,
+.wpforms-container .wpforms-error {
+	display: block;
+	font-size: 0.8125rem;
+	color: #dc2626;
+	margin-top: 0.35rem;
+}
+
+.wpforms-container .wpforms-confirmation-container-full,
+.wpforms-container .wpforms-confirmation-container {
+	margin-top: 1rem;
+	padding: 1.5rem;
+	border-radius: var(--radius, 0.5rem);
+	background: var(--muted, #f1f5f9);
+	border: 1px solid var(--border, #e2e8f0);
+	font-size: 0.95rem;
+}
+
+.mountsol-form-wrap {
+	max-width: 42rem;
+	margin-inline: auto;
+	padding: 2rem;
+	background: var(--background, #fff);
+	border: 1px solid var(--border, #e2e8f0);
+	border-radius: 0.75rem;
+	box-shadow: 0 10px 40px -15px rgb(0 0 0 / 0.12);
+}
+
+.mountsol-form-placeholder {
+	padding: 2rem;
+	border: 2px dashed var(--border, #e2e8f0);
+	border-radius: var(--radius, 0.5rem);
+	text-align: center;
+	color: var(--muted-foreground, #64748b);
+	font-size: 0.9rem;
+}

@@ -1,0 +1,254 @@
+{
+  "AlertTriangle": {
+    "file": "alert-triangle.svg",
+    "score": 6
+  },
+  "ArrowLeft": {
+    "file": "arrow-left.svg",
+    "score": 6
+  },
+  "ArrowRight": {
+    "file": "arrow-right.svg",
+    "score": 6
+  },
+  "Award": {
+    "file": "award.svg",
+    "score": 3
+  },
+  "BarChart3": {
+    "file": "bar-chart-3.svg",
+    "score": 9
+  },
+  "BookOpen": {
+    "file": "book-open.svg",
+    "score": 6
+  },
+  "Bot": {
+    "file": "bot.svg",
+    "score": 3
+  },
+  "Bug": {
+    "file": "bug.svg",
+    "score": 3
+  },
+  "Building2": {
+    "file": "building-2.svg",
+    "score": 6
+  },
+  "Calculator": {
+    "file": "calculator.svg",
+    "score": 3
+  },
+  "Calendar": {
+    "file": "calendar.svg",
+    "score": 3
+  },
+  "CheckCircle": {
+    "file": "check-circle.svg",
+    "score": 6
+  },
+  "CheckIcon": {
+    "file": "check.svg",
+    "score": 3
+  },
+  "CheckSquare": {
+    "file": "check-square.svg",
+    "score": 6
+  },
+  "ChevronDown": {
+    "file": "chevron-down.svg",
+    "score": 6
+  },
+  "ChevronDownIcon": {
+    "file": "chevron-down.svg",
+    "score": 6
+  },
+  "ChevronLeftIcon": {
+    "file": "chevron-left.svg",
+    "score": 6
+  },
+  "ChevronRightIcon": {
+    "file": "chevron-right.svg",
+    "score": 6
+  },
+  "ChevronUpIcon": {
+    "file": "chevron-up.svg",
+    "score": 6
+  },
+  "CircleIcon": {
+    "file": "circle.svg",
+    "score": 3
+  },
+  "Clock": {
+    "file": "clock.svg",
+    "score": 3
+  },
+  "Cloud": {
+    "file": "cloud.svg",
+    "score": 3
+  },
+  "Command": {
+    "file": "command.svg",
+    "score": 3
+  },
+  "CreditCard": {
+    "file": "credit-card.svg",
+    "score": 6
+  },
+  "Crown": {
+    "file": "crown.svg",
+    "score": 3
+  },
+  "Droplets": {
+    "file": "droplets.svg",
+    "score": 3
+  },
+  "FileText": {
+    "file": "file-text.svg",
+    "score": 6
+  },
+  "Flame": {
+    "file": "flame.svg",
+    "score": 3
+  },
+  "GripVerticalIcon": {
+    "file": "grip-vertical.svg",
+    "score": 6
+  },
+  "Hammer": {
+    "file": "hammer.svg",
+    "score": 3
+  },
+  "HardHat": {
+    "file": "hard-hat.svg",
+    "score": 6
+  },
+  "Home": {
+    "file": "home.svg",
+    "score": 3
+  },
+  "Layers": {
+    "file": "layers.svg",
+    "score": 3
+  },
+  "Leaf": {
+    "file": "leaf.svg",
+    "score": 3
+  },
+  "Lightbulb": {
+    "file": "lightbulb.svg",
+    "score": 3
+  },
+  "Loader2Icon": {
+    "file": "loader-2.svg",
+    "score": 6
+  },
+  "Mail": {
+    "file": "mail.svg",
+    "score": 3
+  },
+  "MapPin": {
+    "file": "map-pin.svg",
+    "score": 6
+  },
+  "Menu": {
+    "file": "menu.svg",
+    "score": 3
+  },
+  "MessageSquare": {
+    "file": "message-square.svg",
+    "score": 6
+  },
+  "MoreHorizontal": {
+    "file": "more-horizontal.svg",
+    "score": 6
+  },
+  "MoreHorizontalIcon": {
+    "file": "more-horizontal.svg",
+    "score": 6
+  },
+  "Package": {
+    "file": "package.svg",
+    "score": 3
+  },
+  "Paintbrush": {
+    "file": "paintbrush.svg",
+    "score": 3
+  },
+  "Palette": {
+    "file": "palette.svg",
+    "score": 3
+  },
+  "Phone": {
+    "file": "phone.svg",
+    "score": 3
+  },
+  "PieChart": {
+    "file": "chart-pie.svg",
+    "score": 6
+  },
+  "Receipt": {
+    "file": "receipt.svg",
+    "score": 3
+  },
+  "Settings": {
+    "file": "settings.svg",
+    "score": 3
+  },
+  "Shield": {
+    "file": "shield.svg",
+    "score": 3
+  },
+  "Smartphone": {
+    "file": "smartphone.svg",
+    "score": 3
+  },
+  "Sparkles": {
+    "file": "sparkles.svg",
+    "score": 3
+  },
+  "Star": {
+    "file": "star.svg",
+    "score": 3
+  },
+  "Sun": {
+    "file": "sun.svg",
+    "score": 3
+  },
+  "TreePine": {
+    "file": "tree-pine.svg",
+    "score": 6
+  },
+  "TrendingUp": {
+    "file": "trending-up.svg",
+    "score": 6
+  },
+  "Truck": {
+    "file": "truck.svg",
+    "score": 3
+  },
+  "Users": {
+    "file": "users.svg",
+    "score": 3
+  },
+  "Wind": {
+    "file": "wind.svg",
+    "score": 3
+  },
+  "Wrench": {
+    "file": "wrench.svg",
+    "score": 3
+  },
+  "X": {
+    "file": "x.svg",
+    "score": 3
+  },
+  "XIcon": {
+    "file": "x.svg",
+    "score": 3
+  },
+  "Zap": {
+    "file": "zap.svg",
+    "score": 3
+  }
+}

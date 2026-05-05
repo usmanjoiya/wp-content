@@ -1,0 +1,29 @@
+[
+  {
+    "form": "demo_request",
+    "referenceComponent": "Mountsol.org/components/demo-form.tsx",
+    "fields": [
+      { "name": "fullName", "label": "Full Name", "type": "text", "required": true, "placeholder": "John Doe" },
+      { "name": "businessName", "label": "Business Name", "type": "text", "required": true, "placeholder": "Acme Services" },
+      { "name": "email", "label": "Email", "type": "email", "required": true, "placeholder": "john@acmeservices.com" },
+      { "name": "phone", "label": "Phone", "type": "tel", "required": true, "placeholder": "+1 (555) 123-4567" },
+      {
+        "name": "industry",
+        "label": "Industry",
+        "type": "select",
+        "required": true,
+        "options": ["HVAC", "Plumbing", "Electrical", "Roofing", "Landscaping", "Pest Control", "Solar", "Painting", "Other"]
+      },
+      {
+        "name": "teamSize",
+        "label": "Team Size",
+        "type": "select",
+        "required": true,
+        "options": ["1-5 people", "6-20 people", "21-50 people", "50+ people"]
+      },
+      { "name": "message", "label": "Message", "type": "textarea", "required": false, "placeholder": "Tell us about your business and what you're looking to improve..." }
+    ],
+    "submitLabel": "Request Demo",
+    "footerNote": "We respect your privacy. Unsubscribe at any time."
+  }
+]

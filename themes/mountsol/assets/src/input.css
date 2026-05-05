@@ -1,0 +1,12 @@
+/**
+ * MountSol theme — PostCSS entry (imports legacy shell + WPForms overrides + Tailwind utilities layer).
+ * Build: npm run build
+ *
+ * postcss-import requires all @import before other rules; keep @tailwind after imports.
+ */
+@import "./legacy.css";
+@import "./home-sections.css";
+@import "./inner-pages.css";
+@import "./wpforms-mountsol.css";
+
+@tailwind utilities;
